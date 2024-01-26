@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <script src="https://kit.fontawesome.com/2c9822833e.js" crossorigin="anonymous"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Project Starter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+  <body>
+    <header>
+      <div id="titleSearch">
+        <h1>My Blog</h1>
+        <i id="hamburger" class="fas fa-bars"></i>
+        <form action="#">
+          <input type="search" class="search" id="searchbox" placeholder="Type to search" />
+        </form>
+      </div>
+      
+      <div class="navLinks">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recent Posts</a></li>
+            <li><a href="#">Old Posts</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" id="lastNav">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
 
-<body>
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 2620!!!!!</h1>
-<script type="module" src="./javascripts/main.js"></script>
-</body>
+    </header>
+    
+    
+    <main>
+      <aside></aside>
+
+      <article>
+        <img src="images/blogimg1.jpg" alt="street photography of a street cart in Columbia" />
+        <h3>First Post with Image</h3>
+        <p>By Adam Smith &ensp; On January 1, 2018</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repudiandae ipsa eius sunt commodi sint est
+          in, ut esse tempora laborum! Error, perspiciatis nemo exercitationem enim non earum. Quasi, inventore. Facere
+          praesentium asperiores eius, nobis voluptatibus, quia atque cupiditate eligendi eaque tenetur explicabo
+          adipisci rem cumque laboriosam autem ab molestias blanditiis neque? Ex, sit neque natus officiis repellendus
+          unde aliquid? <br>
+          <button class="readMoreButton">Read more</button>
+        </p>
+      </article>
+
+      <br/>
+
+      <article>
+        <img src="images/blogimg2.jpg" alt="street photography of a shop in Malaysia" />
+
+        <h3>Second Post with Image</h3>
+        <p>By John Doe &ensp; On January 1, 2018</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt laboriosam pariatur consectetur sequi?
+          Obcaecati iusto odit cumque recusandae distinctio sint? Doloremque eum aspernatur vero totam laboriosam
+          aperiam impedit architecto? Accusamus aut hic distinctio, illum quia consectetur rerum optio nostrum
+          cupiditate. Tenetur sit voluptatem porro possimus. Nemo eos nulla necessitatibus sapiente consequatur, nisi,
+          optio laudantium mollitia, libero cupiditate quo rem. <br>
+          <button class="readMoreButton">Read more</button>
+        </p>
+      </article>
+      <br />
+      <div id="prevNextContainer">
+        <button class="prevNext">Prev</button>
+        <p class="prevNextText">1/4</p>
+        <button class="prevNext">Next</button>
+      </div>
+    </main>
+    <footer>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Google+</a>
+
+      <span>&copy; All rights reserved</span>
+    </footer>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
 </html>
