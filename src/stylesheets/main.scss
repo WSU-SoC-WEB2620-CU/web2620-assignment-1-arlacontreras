@@ -7,6 +7,9 @@ h1,
 #hamburger {
   display: inline-block;
 }
+h1 {
+  font-weight: 200;
+}
 #hamburger {
   margin-top: 6%;
   float: right;
@@ -24,6 +27,7 @@ img {
 h3 {
   font-size: 20px;
   margin: 0;
+  font-weight: normal;
 }
 article {
   border-bottom: 1px solid #000;
@@ -35,14 +39,15 @@ article p {
 }
 footer {
   background-color: #e5e5e5;
-  padding: 10px 10px;
-  text-align: center;
 }
 footer a {
   display: none;
 }
-footer span {
+#copyDeclaration {
   text-align: center;
+  padding: 10px 10px;
+  background-color: #e5e5e5;
+  width: 100%;
 }
 .readMoreButton {
   display: none;
@@ -123,24 +128,33 @@ footer span {
     margin: 10px 100px 10px;
   }
   footer {
-    clear: both;
-    padding: 0;
     height: 100px;
+    width: 100%;
   }
   footer a {
-    display:contents;
+    display: block;
     text-align: left;
-    margin: 20px;
+    float: left;
+    margin: 20px 10px 0px 20px;
     text-decoration: none;
     color: #000;
   }
-  footer span {
-    clear: both;
+
+  #socialLinks {
+    position: absolute;
+  }
+  #copyDeclaration {
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: right;
     float: right;
-    margin: 20px;
+    width: 95%;
   }
   #prev {
-    clear: both;
+    float: none;
+  }
+  #next {
+    float: none;
   }
   #searchbox {
     background-color: #e5e5e5;
@@ -152,7 +166,7 @@ footer span {
   }
   .author,
   .blogText {
-    font-size: 17px;
+    font-size: 14px;
   }
   .prevNext,
   .prevNextText {
