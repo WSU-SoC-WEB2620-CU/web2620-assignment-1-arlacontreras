@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./stylesheets/main.scss" />
     <script src="https://kit.fontawesome.com/2c9822833e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&display=swap" rel="stylesheet" />
   </head>
 
   <body>
+    <!--Top section: Header, Search and Navigation-->
     <header>
       <div id="titleSearch">
-        <h1>My Blog</h1>
+        <h1>A Week in a Latin Country!</h1>
         <i id="hamburger" class="fas fa-bars"></i>
         <form action="#">
           <input type="search" class="search" id="searchbox" placeholder="Type to search" />
@@ -29,45 +33,48 @@
         </nav>
       </div>
     </header>
-
+    <!--Main: Two articles with images and content-->
     <main>
-      <article>
+      <article id="article1">
         <img src="images/blogimg1.jpg" alt="street photography of a street cart in Columbia" />
-        <h3>First Post with Image</h3>
+        <h3>A Week in Columbia: I'm Thirsty!</h3>
         <p class="author">By Adam Smith &ensp; On January 1, 2018</p>
         <p class="blogText">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repudiandae ipsa eius sunt commodi sint est
           in, ut esse tempora laborum! Error, perspiciatis nemo exercitationem enim non earum. Quasi, inventore. Facere
           praesentium asperiores eius, nobis voluptatibus, quia atque cupiditate eligendi eaque tenetur explicabo
           adipisci rem cumque laboriosam autem ab molestias blanditiis neque? Ex, sit neque natus officiis repellendus
-          unde aliquid? <br />
+          unde aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, magni similique dignissimos illum
+          aliquid maxime quos porro reiciendis, dolorem hic tempora aspernatur veritatis! Accusamus quasi tempora nisi
+          hic vitae at! <br />
           <button class="readMoreButton">Read more</button>
         </p>
       </article>
-
       <br />
-
-      <article>
-        <img src="images/blogimg1.jpg" alt="street photography of a street cart in Columbia" />
-
-        <h3>Second Post with Image</h3>
+      <article id="article2">
+        <img src="images/blogimg2.jpg" alt="street photography of boat tour floats in Mexico" />
+        <h3>A Week in Mexico: Boat Floats!</h3>
         <p class="author">By John Doe &ensp; On January 1, 2018</p>
         <p class="blogText">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sunt laboriosam pariatur consectetur sequi?
           Obcaecati iusto odit cumque recusandae distinctio sint? Doloremque eum aspernatur vero totam laboriosam
           aperiam impedit architecto? Accusamus aut hic distinctio, illum quia consectetur rerum optio nostrum
           cupiditate. Tenetur sit voluptatem porro possimus. Nemo eos nulla necessitatibus sapiente consequatur, nisi,
-          optio laudantium mollitia, libero cupiditate quo rem. <br />
+          optio laudantium mollitia, libero cupiditate quo rem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aspernatur, sit aut, perspiciatis incidunt ipsam iste consequatur placeat neque quibusdam nobis libero fuga
+          dolorum quasi ut non modi quisquam corporis officiis? <br />
           <button class="readMoreButton">Read more</button>
         </p>
       </article>
       <br />
+      <!--Previous and Next buttons at the bottom of the page-->
       <div id="prevNextContainer">
         <button class="prevNext" id="prev">Prev</button>
         <p class="prevNextText">1/4</p>
         <button class="prevNext" id="next">Next</button>
       </div>
     </main>
+    <!--Footer section: Socials and Copyright-->
     <footer>
       <div id="socialLinks">
         <a class="socialLinks" href="#">Facebook</a>

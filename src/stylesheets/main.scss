@@ -1,19 +1,18 @@
 // Your styles go here
+// General Styling by Element
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
+  font-family: "Cabin", sans-serif;
+
+  background-color: #f4f1de;
 }
 h1,
 #hamburger {
+  color: #e07a5f;
   display: inline-block;
 }
 h1 {
-  font-weight: 200;
-}
-#hamburger {
-  margin-top: 6%;
-  float: right;
-  font-size: 25px;
+  font-size: 35px;
+  font-family: "Lobster", sans-serif;
 }
 form {
   display: none;
@@ -30,6 +29,8 @@ h3 {
   font-weight: normal;
 }
 article {
+  padding-top: 10px;
+  border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 article h3,
@@ -38,16 +39,47 @@ article p {
   margin: 5px;
 }
 footer {
-  background-color: #e5e5e5;
+  background-color: #81b29a;
 }
 footer a {
   display: none;
 }
+//IDs
+#hamburger {
+  margin-top: 6%;
+  float: right;
+  font-size: 25px;
+}
 #copyDeclaration {
   text-align: center;
   padding: 10px 10px;
-  background-color: #e5e5e5;
+  background-color: #81b29a;
   width: 100%;
+}
+#prevNextContainer {
+  width: 100%;
+  text-align: center;
+}
+#prev {
+  float: left;
+}
+#next {
+  float: right;
+}
+#article2 {
+  border-top: none;
+}
+//Classes
+.prevNext,
+.prevNextText {
+  display: inline-block;
+  text-decoration: none;
+}
+.prevNext {
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: #81b29a;
+  border: 0;
 }
 .readMoreButton {
   display: none;
@@ -58,45 +90,28 @@ footer a {
 .blogText {
   font-size: 13px;
 }
-#prevNextContainer {
-  width: 100%;
-  text-align: center;
-}
-.prevNext,
-.prevNextText {
-  display: inline-block;
-  text-decoration: none;
-}
-.prevNext {
-  border-radius: 20px;
-  padding: 10px 30px;
-  background-color: #e5e5e5;
-  border: 0;
-}
-#prev {
-  float: left;
-}
-#next {
-  float: right;
-}
-
+// DESTOP + TABLET
 @media all and (min-width: 576px) {
+  // General Styling by Element
+  h1 {
+    padding-bottom: 0;
+  }
   h1,
   form {
     display: inline-block;
   }
   form {
-    margin-top: 3%;
+    margin-top: 2%;
     float: right;
     border-radius: 20px;
-    padding: 10px 20% 10px 30px;
-    background-color: #e5e5e5;
+    padding: 10px 10% 10px 30px;
+    background-color: #81b29a;
     border: none;
   }
   nav {
     display: block;
     text-align: center;
-    background-color: #e5e5e5;
+    background-color: #81b29a;
     font-size: 20px;
     margin: 10px auto;
     padding: 5px;
@@ -109,18 +124,19 @@ footer a {
   }
   nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #52154e;
   }
   nav a {
     border-right: 2px solid #000;
     padding-right: 5px;
   }
-  #lastNav {
-    border: none;
-  }
   img {
     width: 30%;
     float: left;
+  }
+  article {
+    padding-bottom: 8%;
+    border-top: none;
   }
   article h3,
   article p {
@@ -139,7 +155,10 @@ footer a {
     text-decoration: none;
     color: #000;
   }
-
+  //IDs
+  #lastNav {
+    border: none;
+  }
   #socialLinks {
     position: absolute;
   }
@@ -157,13 +176,17 @@ footer a {
     float: none;
   }
   #searchbox {
-    background-color: #e5e5e5;
+    background-color: #81b29a;
     border: none;
   }
   #prevNextContainer {
     width: 100%;
     text-align: center;
   }
+  #hamburger {
+    display: none;
+  }
+  //Classes
   .author,
   .blogText {
     font-size: 14px;
@@ -182,10 +205,7 @@ footer a {
     margin-top: 10px;
     border-radius: 20px;
     padding: 10px 30px;
-    background-color: #e5e5e5;
+    background-color: #81b29a;
     border: 0;
-  }
-  #hamburger {
-    display: none;
   }
 }
