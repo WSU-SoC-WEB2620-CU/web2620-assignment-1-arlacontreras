@@ -33,7 +33,6 @@ article p {
   overflow: hidden;
   margin: 5px;
 }
-
 footer {
   background-color: #e5e5e5;
   padding: 10px 10px;
@@ -90,6 +89,7 @@ footer span {
     border: none;
   }
   nav {
+    display: block;
     text-align: center;
     background-color: #e5e5e5;
     font-size: 20px;
@@ -106,30 +106,41 @@ footer span {
     text-decoration: none;
     color: #000;
   }
+  nav a {
+    border-right: 2px solid #000;
+    padding-right: 5px;
+  }
+  #lastNav {
+    border: none;
+  }
   img {
-    width: 40%;
+    width: 30%;
     float: left;
   }
   article h3,
   article p {
-    overflow: hidden;
     padding: 0 0 0 30px;
+    margin: 10px 100px 10px;
   }
-
   footer {
+    clear: both;
     padding: 0;
-    background-color: #e5e5e5;
     height: 100px;
   }
   footer a {
-    float: left;
+    display:contents;
+    text-align: left;
     margin: 20px;
     text-decoration: none;
     color: #000;
   }
   footer span {
+    clear: both;
     float: right;
     margin: 20px;
+  }
+  #prev {
+    clear: both;
   }
   #searchbox {
     background-color: #e5e5e5;
@@ -139,11 +150,18 @@ footer span {
     width: 100%;
     text-align: center;
   }
+  .author,
+  .blogText {
+    font-size: 17px;
+  }
   .prevNext,
   .prevNextText {
     display: inline-block;
     margin: 20px;
     text-decoration: none;
+  }
+  .readMoreButton {
+    display: inline-block;
   }
   .readMoreButton,
   .prevNext {
